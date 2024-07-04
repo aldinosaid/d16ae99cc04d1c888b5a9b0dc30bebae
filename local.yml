@@ -1,0 +1,37 @@
+services:
+  php:
+    build: .
+    ports:
+      - "80:80"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    depends_on:
+      - postgres
+    volumes:
+      - ./src:/var/www/html
+      - ./log/cron:/var/log/cron
+
+  postgres:
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: email_service
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: aldinosaid!23
+    volumes:
+      - postgresDB:/var/lib/postgresql/data 
+ 
+  adminer:
+    image: adminer
+    environment:
+      - PMA_ARBITRARY=1
+      - ADMINER_DESIGN=nette
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+ 
+volumes:
+  postgresDB:
