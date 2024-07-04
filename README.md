@@ -12,9 +12,11 @@
 * Clone the project from GitHub
 ```bash
 git clone https://github.com/aldinosaid/d16ae99cc04d1c888b5a9b0dc30bebae.git 
-cd d16ae99cc04d1c888b5a9b0dc30bebae 
+cd d16ae99cc04d1c888b5a9b0dc30bebae/src/
 composer install 
 ```
+
+* After successful `composer install` You must back to root directory, use this one command `cd ..`
 
 #### Step #2: First time installation
 
