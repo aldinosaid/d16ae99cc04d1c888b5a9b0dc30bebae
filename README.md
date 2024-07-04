@@ -11,8 +11,9 @@
 
 * Clone the project from GitHub
 ```bash
-git clone https://github.com/aldinosaid/d16ae99cc04d1c888b5a9b0dc30bebae.git
-composer install
+git clone https://github.com/aldinosaid/d16ae99cc04d1c888b5a9b0dc30bebae.git 
+cd d16ae99cc04d1c888b5a9b0dc30bebae 
+composer install 
 ```
 
 #### Step #2: First time installation
