@@ -32,6 +32,7 @@ $ docker-compose -f local.yml up -d
 * Access the url `http://localhost:8080`
 * Fill the mandatory using this fields
 
+| Field        | Key           |
 |--------------|---------------|
 | System       | PostgreSQL    |
 | Server       | postgres      |
