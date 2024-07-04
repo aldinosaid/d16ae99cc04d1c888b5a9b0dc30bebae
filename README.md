@@ -39,7 +39,6 @@ $ docker-compose -f local.yml up -d
 | Username     | admin         |
 | Password     | aldinosaid!23 |
 | Database     | email_service |
-|--------------|---------------|
 
 * Click the button import, and choose the file.
 * Click the execute button.
