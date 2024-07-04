@@ -19,13 +19,13 @@ composer install
 #### Step #2: First time installation
 
 ```bash
-$ docker-compose -f local.yml build
+docker-compose -f local.yml build
 ```
 
 #### Step #3: Starting docker compose
 
 ```bash
-$ docker-compose -f local.yml up -d
+docker-compose -f local.yml up -d
 ```
 
 #### Step #4: Importing table using Admine
